@@ -2,8 +2,8 @@ import React from 'react';
 import { HashRouter,Route,Routes} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 //---
-import Footer from './componets/footer';
-import Header from './componets/header';
+import Footer from './components/footer';
+import Header from './components/header';
 import Home from './pages/Home';
 import Login from './pages/login';
 import About from './pages/about';
