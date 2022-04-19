@@ -10,7 +10,6 @@ import About from './pages/about';
 import Transaction from './pages/transaction';
 import Register from './pages/register';
 import Account from './pages/account';
-// import {Nav} from 'react-bootstrap';
 
 const App = () => {
     return(
