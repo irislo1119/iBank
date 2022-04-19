@@ -1,20 +1,30 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container,Row,Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-// import '../index.css';
+
+const label = {
+    color: 'black',
+    textDecoration:'none'
+}
+const app = {
+    height: 100
+}
 const header=()=>{
     return(
-        <Container style={{height:100}} className="border" fluid>
-            <Row className="justify-content-center" style={{height:100 }} >
-                <Col className="justify-content-top align-items-center d-flex" xs={6} >
-                    <Link to="/" style={{textDecoration:'none',color:'black'}}>LOGO</Link>
+        <Container className="border" fluid style={app}>
+            <Row className="justify-content-center" style={app}>
+                <Col className="align-items-center d-flex" xs={6}>
+                    <Link to="/" style={label}>LOGO</Link>
                 </Col>
-                <Col className="justify-content-bottom align-items-center d-flex" xs={3}>
-                    <Link to="/About" style={{textDecoration:'none',color:'black'}}>About</Link>
+                <Col className="align-items-center d-flex" xs={2}>
+                    <Link to="/About" style={label}>About</Link>
                 </Col>
-                <Col className="justify-content-bottom align-items-center d-flex" xs={2}>
-                    <Link to="/Member" style={{textDecoration:'none',color:'black',}}>member</Link>
+                <Col className="align-items-center d-flex" xs={2}>
+                    <Link to="/Login" style={label}>Log-in</Link>
                 </Col>
+                {/* <Col className="align-items-center d-flex" xs={2}>
+                    <Link to="/login" style={label}>Username</Link>
+                </Col> */}
             </Row>
         </Container>
     ); 

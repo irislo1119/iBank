@@ -6,22 +6,26 @@ const app = {
     height:650,
 }
 
-const login = () => {
+const account = () => {
     return(
         <Container className="d-flex justify-content-center align-item-center">
             <Row>
                 <Col md={1}>
-                    <p>登入</p>
+                    <p>帳戶餘額：９９９９</p>
                 </Col>
-                <Col md={1} style={app}>
+                <Col md={1}>
+                    <Link to="/Transaction">轉帳</Link>
+                </Col>
+                <Col md={1}>
+                    <Link to="/History">轉帳記錄</Link>
+                </Col>
+                {/* <Col md={1} style={app}>
                     <Form className="border w-90" md={10}>
                         <p>I'm form</p>
                     </Form>
-                    {/* <button>登入</button> */}
-                    <Link to="/Account">登入</Link>
-                </Col>
+                </Col> */}
             </Row>
         </Container>
     ); 
 }
-export default login;
+export default account;

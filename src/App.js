@@ -1,16 +1,18 @@
 import React from 'react';
+import { HashRouter,Route,Routes} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+//---
 import Footer from './componets/footer';
 import Header from './componets/header';
-import { HashRouter,Route,Routes} from "react-router-dom";
 import Home from './pages/Home';
 import Login from './pages/login';
 import About from './pages/about';
 import Transaction from './pages/transaction';
 import Register from './pages/register';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Account from './pages/account';
 // import {Nav} from 'react-bootstrap';
 
-const App=()=>{
+const App = () => {
     return(
         <HashRouter>
             <Header/>
@@ -30,11 +32,12 @@ const App=()=>{
                     </Nav.Item>
                 </Nav> */}
                 <Routes>
-                        <Route path="/" element={<Home />} exact/>
-                        <Route path="/Login" element={<Login />} exact/>
-                        <Route path="/Transaction" element={<Transaction />} exact/>
-                        <Route path="/About" element={<About />} exact/>
-                        <Route path="/Register" element={<Register />} exact/>
+                    <Route path="/" element={<Home />} exact/>
+                    <Route path="/Login" element={<Login />} exact/>
+                    <Route path="/Transaction" element={<Transaction />} exact/>
+                    <Route path="/About" element={<About />} exact/>
+                    <Route path="/Register" element={<Register />} exact/>
+                    <Route path="/Account" element={<Account />} exact/>
                 </Routes>
             <Footer/>
         </HashRouter>    

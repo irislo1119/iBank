@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container,Form,Row,Col,Button} from 'react-bootstrap';
-const transaction=()=>{
+
+const transaction = () => {
     return(
         <Container className="d-flex justify-content-around w-100" style={{height:650}}>
             <Row className=' justify-content-center align-items-center '>
