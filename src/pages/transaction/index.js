@@ -4,7 +4,7 @@ import {Container,Form,Row,Col,Button} from 'react-bootstrap';
 const transaction = () => {
     return(
         <Container className="d-flex justify-content-around w-100" style={{height:650}}>
-            <Row className=' justify-content-center align-items-center '>
+            {/* <Row className=' justify-content-center align-items-center '>
                 <Col xs={8} style={{}}>
                     <p >button</p>
                 </Col>
@@ -14,7 +14,7 @@ const transaction = () => {
                 <Col xs={8}>
                     <p>button</p>
                 </Col>
-            </Row>
+            </Row> */}
             <Row className=' justify-content-center align-items-center '>
                 <Col md={12}>
                     <p>轉帳</p>

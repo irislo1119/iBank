@@ -1,22 +1,29 @@
 import React from 'react';
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
-import Sea from "../image/sea.jpeg";
+import {Carousel} from 'react-bootstrap';
 import Cat from "../image/cat.jpg";
+import Sea from '../image/sea.jpeg';
 
-const handleDragStart = (e) => e.preventDefault();
-
-const items = [
-  <img src={Sea} onDragStart={handleDragStart} role="presentation"  />,
-  <img src={Cat} onDragStart={handleDragStart} role="presentation" />,
-  <img src={Sea} onDragStart={handleDragStart} role="presentation" />,
-  <img src={Sea} onDragStart={handleDragStart} role="presentation" />,
-];
-
-const Gallery = () => {
+const carouse = () => {
   return (
-    <AliceCarousel mouseTracking items={items}/>
+    <Carousel fade>
+        <Carousel.Item>
+            <img
+            className=" w-100 center"
+            src={Cat}
+            alt="First slide"
+            style={{height:300,objectFit:'cover'}}
+            />
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+            className="d-flex w-100 center"
+            src={Sea}
+            alt="Second slide"
+            style={{height:300}}
+            />
+        </Carousel.Item>
+    </Carousel>
   );
 }
 
-export default Gallery
+export default carouse
