@@ -1,10 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container,Form,Row,Col,Tabs,Tab,Card,Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import Member from './member';
-import S from './account.css';
+import Member from './components/member';
+import './account.css';
+
 const app = {
-    margin:'50px 0'
+    marginTop: "50px",
+    marginBottom: "50px",
+}
+
+const balance = {
+    
 }
 
 const account = () => {
@@ -17,10 +23,10 @@ const account = () => {
                             <Card  className="text-end">
                                 <Card.Header className="text-start" >帳戶餘額</Card.Header>
                                     <Card.Body>
-                                            <Card.Text className="text-start">
+                                            <Card.Text className="text-start" style={balance}>
                                                 9999
                                             </Card.Text>
-                                            <Button variant="outline-secondary">Success</Button>{' '}
+                                            {/* <Button variant="outline-secondary">Success</Button>{' '} */}
                                     </Card.Body>
                             </Card>                       
                         </Col>
