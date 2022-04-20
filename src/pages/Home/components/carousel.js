@@ -7,7 +7,7 @@ import Cat from "../image/cat.jpg";
 const handleDragStart = (e) => e.preventDefault();
 
 const items = [
-  <img src={Sea} onDragStart={handleDragStart} role="presentation" />,
+  <img src={Sea} onDragStart={handleDragStart} role="presentation"  />,
   <img src={Cat} onDragStart={handleDragStart} role="presentation" />,
   <img src={Sea} onDragStart={handleDragStart} role="presentation" />,
   <img src={Sea} onDragStart={handleDragStart} role="presentation" />,
