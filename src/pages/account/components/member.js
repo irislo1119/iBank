@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Form,Col,Button} from 'react-bootstrap';
 
-const member = () => {
+const Member = () => {
     return(
             <Col style={{margin:'10px 0',padding:'5px'}} xs={12}>
                 <Form>
@@ -32,4 +32,4 @@ const member = () => {
             </Col>
     ); 
 }
-export default member;
+export default Member;

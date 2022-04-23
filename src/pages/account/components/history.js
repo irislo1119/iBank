@@ -1,6 +1,6 @@
 import {Col,Card} from 'react-bootstrap';
 
-const history = () => {
+const History = () => {
     return (
         <Col md={10} style={{margin:'25px 0'}}>
             <Card  className="text-end">
@@ -16,4 +16,4 @@ const history = () => {
     );
 }
 
-export default history
+export default History

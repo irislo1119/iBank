@@ -1,6 +1,6 @@
 import {Col,Card} from 'react-bootstrap';
 
-const balance = () => {
+const Balance = () => {
     return (
         <Col md={10} style={{margin:'25px 0'}}>
             <Card  className="text-end">
@@ -16,4 +16,4 @@ const balance = () => {
     );
 }
 
-export default balance
+export default Balance
