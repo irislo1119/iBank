@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container,Row,Col,CardGroup,Card } from 'react-bootstrap';
-import MyCard from './components/card';
+import MyCard from './components/card.js';
 
 const backGroundColor = {
     backgroundColor: "aliceblue",
@@ -47,12 +47,21 @@ const About = () => {
             <Row className="border">
                 <Col xs={12}>
                     <h5 style={title} className="align-item-center">關於我們</h5>
+                    
                 </Col>
                 <CardGroup>
-                    <MyCard />
-                    <MyCard />
-                    <MyCard />
-                    
+                    <Col xs style={cardPadding}>
+                        <MyCard/>
+                    </Col>
+                    <Col xs style={cardPadding}>
+                        <MyCard/>
+                    </Col>
+                    <Col xs style={cardPadding}>
+                        <MyCard/>
+                    </Col >
+                    <Col xs style={cardPadding}>
+                        <MyCard/>
+                    </Col>
                     {/* <Col xs style={cardPadding}>
                         <Card border="light" style={wall}>
                             <Card.Body style={cardBodyHeight}>
@@ -76,7 +85,7 @@ const About = () => {
                                 </small>
                             </Card.Footer>
                         </Card>
-                    </Col> */}
+                    </Col>
                     <Col xs style={cardPadding}>
                         <Card border="light" bg="light" style={wall}>
                             <Card.Body style={cardBodyHeight}>
@@ -123,7 +132,7 @@ const About = () => {
                                 </small>
                             </Card.Footer>
                         </Card>
-                    </Col>
+                    </Col> */}
                 </CardGroup>
             </Row>
         </Container>

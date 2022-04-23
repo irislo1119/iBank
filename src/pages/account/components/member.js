@@ -3,7 +3,7 @@ import {Form,Col,Button} from 'react-bootstrap';
 
 const Member = () => {
     return(
-            <Col style={{margin:'10px 0',padding:'5px'}} xs={12}>
+            <Col style={{margin:'10px 0',padding:'15px'}} xs={12}>
                 <Form>
                     <p>User Name</p>
                     <Form.Group  controlId="formBasicEmail">

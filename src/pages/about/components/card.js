@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Col,Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 var wall = {
     border: "1px solid #9E9E9E",
@@ -9,9 +9,9 @@ var wall = {
 const cardBodyHeight = {
     // height: "280px"
 }
-const cardPadding = {
-    padding: '10px 10px 20px 10px',
-}
+// const cardPadding = {
+//     padding: '10px 10px 20px 10px',
+// }
 const textMargin = {
     marginTop: "15px",
     marginBottom: "4px",
@@ -22,7 +22,11 @@ const label = {
 }
 
 const MyCard = () => {
-    <Col style={cardPadding}>
+    // <Col style={cardPadding}>
+
+    // </Col>
+    return(
+
         <Card border="light" style={wall}>
             <Card.Body style={cardBodyHeight}>
                 <Card.Title>許靜sss玟</Card.Title>
@@ -45,7 +49,7 @@ const MyCard = () => {
                 </small>
             </Card.Footer>
         </Card>
-    </Col>
+    );
 }
 
 export default MyCard;

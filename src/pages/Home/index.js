@@ -8,14 +8,19 @@ const app = {
     display:'inline',
 }
 const rate = {
-    height: 310,
+    height: 288,
+    backgroundImage: `url(${Background})`,
+    backgroundSize:'380px 308px',
 }
 const background = {
     backgroundImage: `url(${Background})`,
 }
+const Size={
+    height:'590px'
+}
 const Home = () => {
     return(
-        <Container className="border " fluid style={background}>
+        <Container className="border " fluid style={Size}>
             <Row className="border">
                 <Col className=" justify-content-center align-items-center" xs={12} style={app}>
                     <Mycarousel/>   

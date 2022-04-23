@@ -6,3 +6,19 @@
     border-radius: 50px;
     border-color: #dee2e6;
 }
+.mymember{
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 20px;
+  text-align: center;
+  margin: 10px 0;
+  padding: 0;
+}
+.card-header{
+  border: none;
+  background-color: white;
+  font-size: 30px;
+  margin: 20px 0 -30px 0;
+}
+.card-body{
+  margin: 0 0 20px 0;
+}

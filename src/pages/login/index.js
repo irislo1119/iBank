@@ -3,12 +3,12 @@ import { Container,Form,Row,Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const app = {
-    // height:650,
+    height:590,
 }
 
 const Login = () => {
     return(
-        <Container className="d-flex justify-content-center align-item-center">
+        <Container className="d-flex justify-content-center align-item-center" style={app}>
             <Row>
                 <Col md={1}>
                     <p>登入</p>
