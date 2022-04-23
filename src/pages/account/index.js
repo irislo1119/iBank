@@ -1,53 +1,47 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container,Form,Row,Col,Tabs,Tab,Card,Button} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
-import Member from './components/member';
 import './account.css';
+import { Container,Row,Tabs,Tab } from 'react-bootstrap';
+import { useState } from "react";
+import Member from './components/member';
+import Balance from './components/balance';
+import History from './components/history';
 
 const app = {
     marginTop: "50px",
     marginBottom: "50px",
 }
 
-const balance = {
-    
-}
+const Account = () => {
+    const [page, setPage] = useState("AccountDetail");
 
-const account = () => {
+    function ToAccountDetail() {
+        setPage("AccountDetail");
+    }
+    function ToMemberProfile() {
+        setPage("MemberProfile");
+    }
+
     return(
         <Container className="d-flex justify-content-center align-item-center" style={app}>
-            <Row>
+            <Row className="mb-3">
+                <div>
+                    <p onClick={ToAccountDetail} className='justify-content-start d-flex'>我的帳戶</p>
+                    <p onClick={ToMemberProfile} className='justify-content-start d-flex'>會員資料</p>
+                    {page === "AccountDetail" && <Balance />}
+                    {page === "AccountDetail" && <History />}
+                    {page === "MemberProfile" && <Member />}                        
+                </div>
+
                 <Tabs id="uncontrolled-tab-example" className="mb-3">
                     <Tab eventKey="account" title="我的帳戶">
-                        <Col md={10} style={{margin:'25px 0'}}>
-                            <Card  className="text-end">
-                                <Card.Header className="text-start" >帳戶餘額</Card.Header>
-                                    <Card.Body>
-                                            <Card.Text className="text-start" style={balance}>
-                                                9999
-                                            </Card.Text>
-                                            {/* <Button variant="outline-secondary">Success</Button>{' '} */}
-                                    </Card.Body>
-                            </Card>                       
-                        </Col>
-                        <Col md={10} style={{margin:'25px 0'}}>
-                            <Card  className="text-end">
-                                <Card.Header className="text-start">轉帳紀錄</Card.Header>
-                                    <Card.Body>
-                                            <Card.Text className="text-start">
-                                                9次
-                                            </Card.Text>
-                                        <Button variant="outline-secondary" >詳細資訊</Button>
-                                    </Card.Body>
-                            </Card>                       
-                        </Col>
                     </Tab>
-                    <Tab eventKey="member" title="會員資料" className='justify-content-center d-flex '>
-                        <Member />
+                    <Tab eventKey="" title="會員資料" className='justify-content-center d-flex'>
                     </Tab>
                 </Tabs>
+
+
             </Row>
         </Container>
     ); 
 }
-export default account;
+export default Account;

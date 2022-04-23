@@ -36,7 +36,7 @@ const textMargin = {
     marginBottom: "5px",
 }
 
-const about = () => {
+const About = () => {
     return(
         <Container fluid>
             <Row className="d-flex justify-content-center align-item-center border" style={backGroundColor}>
@@ -153,4 +153,4 @@ const about = () => {
         </Container>
     ); 
 }
-export default about;
+export default About;

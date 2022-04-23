@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container,Row,Col,Carousel} from 'react-bootstrap';
+import { Container,Row,Col } from 'react-bootstrap';
 import Mycarousel from './components/carousel';
 
 const app = {
