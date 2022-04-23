@@ -26,7 +26,6 @@ const MyCard = () => {
 
     // </Col>
     return(
-
         <Card border="light" style={wall}>
             <Card.Body style={cardBodyHeight}>
                 <Card.Title>許靜sss玟</Card.Title>
