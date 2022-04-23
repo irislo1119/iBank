@@ -3,7 +3,7 @@ import { Container,Form,Row,Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const app = {
-    height:650,
+    // height:650,
 }
 
 const Login = () => {

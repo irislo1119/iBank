@@ -3,7 +3,7 @@ import {Carousel} from 'react-bootstrap';
 import Cat from "../image/cat.jpg";
 import Sea from '../image/sea.jpeg';
 
-const Carousel = () => {
+const MyCarousel = () => {
   return (
     <Carousel fade>
         <Carousel.Item>
@@ -26,4 +26,4 @@ const Carousel = () => {
   );
 }
 
-export default Carousel
+export default MyCarousel

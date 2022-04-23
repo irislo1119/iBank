@@ -1,18 +1,21 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container,Row,Col } from 'react-bootstrap';
 import Mycarousel from './components/carousel';
+import Background from "./image/wave.png"
 
 const app = {
     padding:0,
-    display:'inline'
+    display:'inline',
 }
 const rate = {
-    height:250
+    height: 310,
 }
-
+const background = {
+    backgroundImage: `url(${Background})`,
+}
 const Home = () => {
     return(
-        <Container className="border " fluid>
+        <Container className="border " fluid style={background}>
             <Row className="border">
                 <Col className=" justify-content-center align-items-center" xs={12} style={app}>
                     <Mycarousel/>   
