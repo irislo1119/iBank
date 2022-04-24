@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container,Row,Col} from 'react-bootstrap';
 
 const Size ={
-    height:'50px'
+    lineHeight: "47px"
 }
 const footer=()=>{
     return(

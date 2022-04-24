@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Card } from 'react-bootstrap';
+import { Card,Col } from 'react-bootstrap';
+import { useState } from 'react';
 
 var wall = {
     border: "1px solid #9E9E9E",
@@ -9,9 +10,9 @@ var wall = {
 const cardBodyHeight = {
     // height: "280px"
 }
-// const cardPadding = {
-//     padding: '10px 10px 20px 10px',
-// }
+const cardPadding = {
+    padding: '10px 10px 20px 10px',
+}
 const textMargin = {
     marginTop: "15px",
     marginBottom: "4px",
@@ -21,33 +22,32 @@ const label = {
     textDecoration:'none'
 }
 
-const MyCard = () => {
-    // <Col style={cardPadding}>
-
-    // </Col>
+const MyCard = ({ name, content, gitHub, email }) => {
     return(
-        <Card border="light" style={wall}>
-            <Card.Body style={cardBodyHeight}>
-                <Card.Title>許靜sss玟</Card.Title>
-                <Card.Text style={textMargin}>
-                    系級：元智大學
-                </Card.Text>
-                <Card.Text>
-                    負責內容：負責內容負責內容負責內容，負責內容負責內容  
-                </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-                <small className="text-muted">
-                    <span>GitHub: </span>
-                    <a href='https://github.com/Chrissy1209' style={label}>https://github.com/Chrissy1209</a>
-                </small>
-                <br></br>
-                <small>
-                    <span style={{color:"#6c757d"}}>Email: </span>
-                    <a href='mailto: chrissyhsu.i@gmail.com' style={label}>chrissyhsu.i@gmail.com</a>
-                </small>
-            </Card.Footer>
-        </Card>
+        <Col xs style={cardPadding}>
+            <Card border="light" style={wall}>
+                <Card.Body style={cardBodyHeight}>
+                    <Card.Title>{name}</Card.Title>
+                    <Card.Text style={textMargin}>
+                        系級：元智大學資訊傳播學系
+                    </Card.Text>
+                    <Card.Text>
+                        負責內容：{content}
+                    </Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                    <small className="text-muted">
+                        <span>GitHub: </span>
+                        <a href={gitHub} style={label}>{gitHub}</a>
+                    </small>
+                    <br></br>
+                    <small>
+                        <span style={{color:"#6c757d"}}>Email: </span>
+                        <a href={"mailto:"+email} style={label}>{email}</a>
+                    </small>
+                </Card.Footer>
+            </Card>        
+        </Col>
     );
 }
 

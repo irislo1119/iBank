@@ -7,10 +7,9 @@ import Balance from './components/balance';
 import History from './components/history';
 
 const app = {
-    marginTop: "50px",
+    marginTop: "40px",
     marginBottom: "50px",
     height:'490px',
-
 }
 
 const Account = () => {
@@ -26,25 +25,16 @@ const Account = () => {
     return(
         <Container className="d-flex justify-content-center align-item-center" style={app}>
             <Row >
-                <Col xs={6}>
-                    <p onClick={ToAccountDetail} className='mymember'>我的帳戶</p>
+                <Col xs={4}>
+                    <p onClick={ToAccountDetail} className='myMember'>我的帳戶</p>
                 </Col>
-                <Col xs={6}>
-                    <p onClick={ToMemberProfile} className='mymember'>會員資料</p>
+                <Col xs={4}>
+                    <p onClick={ToMemberProfile} className='myMember'>會員資料</p>
                 </Col >
                     {page === "AccountDetail" && <Balance />}
                     {page === "AccountDetail" && <History />}
                     {page === "MemberProfile" && <Member />}                        
             </Row>
-{/* 
-                <Tabs id="uncontrolled-tab-example" className="mb-3">
-                    <Tab eventKey="account" title="我的帳戶">
-                    </Tab>
-                    <Tab eventKey="" title="會員資料" className='justify-content-center d-flex'>
-                    </Tab>
-                </Tabs> */}
-
-
         </Container>
     ); 
 }
