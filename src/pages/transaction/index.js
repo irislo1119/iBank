@@ -3,7 +3,7 @@ import { Container,Form,Row,Col,Button } from 'react-bootstrap';
 
 const Transaction = () => {
     return(
-        <Container className="d-flex justify-content-around w-100" style={{height:650}}>
+        <Container className="d-flex justify-content-around w-100" style={{height:590}}>
             {/* <Row className=' justify-content-center align-items-center '>
                 <Col xs={8} style={{}}>
                     <p >button</p>
