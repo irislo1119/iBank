@@ -1,9 +1,9 @@
 import React from 'react';
-import {Carousel} from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 import Cat from "../image/cat.jpg";
 import Sea from '../image/sea.jpeg';
 
-const carouse = () => {
+const MyCarousel = () => {
   return (
     <Carousel fade>
         <Carousel.Item>
@@ -26,4 +26,4 @@ const carouse = () => {
   );
 }
 
-export default carouse
+export default MyCarousel

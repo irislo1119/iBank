@@ -1,28 +1,33 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container,Row,Col,Carousel} from 'react-bootstrap';
+import { Container,Row,Col } from 'react-bootstrap';
 import Mycarousel from './components/carousel';
+import Rate from "./components/rate"
+import Background from "./image/wave.png";
 
 const app = {
+    height:'590px'
+}
+const carousel = {
     padding:0,
-    display:'inline'
 }
 const rate = {
-    height:250
+    height: 288,
+    backgroundImage: `url(${Background})`,
+    backgroundapp:'110%',
+    backgroundPosition: "bottom",
+    backgroundRepeat: "no-repeat",
 }
-
 const Home = () => {
     return(
-        <Container className="border " fluid>
+        <Container className="border " fluid style={app}>
             <Row className="border">
-                <Col className=" justify-content-center align-items-center" xs={12} style={app}>
+                <Col className=" justify-content-center align-items-center" xs={12} style={carousel}>
                     <Mycarousel/>   
                 </Col>
             </Row>
             <Row style={rate} className="border">
                 <Col className="d-flex justify-content-center align-items-center" xs={12}>
-                    <div>
-                        <p>匯率</p>
-                    </div>
+                    <Rate />
                 </Col>
             </Row>
         </Container>  

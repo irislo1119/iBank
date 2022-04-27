@@ -1,14 +1,14 @@
 import React from 'react';
-import { HashRouter,Route,Routes} from "react-router-dom";
+import { HashRouter,Route,Routes } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 //---
-import Footer from './components/footer';
 import Header from './components/header';
+import Footer from './components/footer';
 import Home from './pages/Home';
 import Login from './pages/login';
+import Register from './pages/register';
 import About from './pages/about';
 import Transaction from './pages/transaction';
-import Register from './pages/register';
 import Account from './pages/account';
 
 const App = () => {

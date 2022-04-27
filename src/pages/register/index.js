@@ -1,12 +1,21 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+<<<<<<< HEAD
 import {Container,Form,Row,Col,Button} from 'react-bootstrap';
 
 const register=()=>{
+=======
+import { Container,Form,Row,Col } from 'react-bootstrap';
+const Size ={
+    height:'590px'
+}
+const Register=()=>{
+>>>>>>> 7a679949710018ee982a20d8bfe2b0dc1e212f27
     return(
-        <Container className="d-flex justify-content-center align-item-center" style={{height:650}}>
+        <Container className="d-flex justify-content-center align-item-center" style={Size}>
             <Row>
                 <p>註冊</p>
                 <Col md={10}>
+<<<<<<< HEAD
                     <Form md={10}>
                         <Form.Group  controlId="registerAccountName">
                             <Form.Label md={2}>帳號</Form.Label>
@@ -31,10 +40,14 @@ const register=()=>{
                         <Button variant="outline-secondary" type="submit">
                             註冊
                         </Button>
+=======
+                    <Form className="border w-90" md={10}>
+                        
+>>>>>>> 7a679949710018ee982a20d8bfe2b0dc1e212f27
                     </Form>
                 </Col>
             </Row>
         </Container>
     ); 
 }
-export default register;
+export default Register;
