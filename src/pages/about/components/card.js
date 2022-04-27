@@ -24,7 +24,7 @@ const label = {
 
 const MyCard = ({ name, content, gitHub, email }) => {
     return(
-        <Col xs style={cardPadding}>
+        <Col xs={12} style={cardPadding}>
             <Card border="light" style={wall}>
                 <Card.Body style={cardBodyHeight}>
                     <Card.Title>{name}</Card.Title>

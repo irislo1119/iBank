@@ -17,6 +17,10 @@ const rate = {
     backgroundPosition: "bottom",
     backgroundRepeat: "no-repeat",
 }
+const text ={
+    textAlign:'center',
+    margin:'30px 0',
+}
 const Home = () => {
     return(
         <Container className="border " fluid style={app}>
@@ -26,9 +30,12 @@ const Home = () => {
                 </Col>
             </Row>
             <Row style={rate} className="border">
-                <Col className="d-flex justify-content-center align-items-center" xs={12}>
-                    <Rate />
-                </Col>
+                <h3 style={text}>匯率查詢</h3>
+                        <Rate />
+                        <Rate />
+                        <Rate />
+                        <Rate />
+                        <Rate />
             </Row>
         </Container>  
     ); 
