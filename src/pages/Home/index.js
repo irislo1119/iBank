@@ -13,7 +13,7 @@ const carousel = {
 const rate = {
     height: 288,
     backgroundImage: `url(${Background})`,
-    backgroundapp:'110%',
+    backgroundSize:'110%',
     backgroundPosition: "bottom",
     backgroundRepeat: "no-repeat",
 }
