@@ -9,7 +9,7 @@ const margin = {
     margin: "10px 0",
 }
 
-const Register=()=>{
+const Register = () => {
     return(
         <Container className="d-flex justify-content-center align-items-center" style={Size}>
             <Row>

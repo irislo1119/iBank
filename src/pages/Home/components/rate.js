@@ -4,6 +4,19 @@ import axios from "axios";
 import {Col,Card} from 'react-bootstrap';
 import Usd from '../image/USD.jpeg';
 
+const color = {
+    backgroundColor: "rgba(255,255,255,0.4)",
+    margin: 0,
+}
+const ImgSize = {
+    width:'20%'
+}
+const cardPadding = {
+    padding: '0 10px 25px',
+    // margin: '-10px -10px -20px -10px',
+    // height:'100px',
+}
+
 const Rate = () => {
     const [uSDTWD, setUSDTWD] = useState("");
     const [hKDTWD, one] = useState("");
@@ -51,35 +64,19 @@ const Rate = () => {
                 console.log(err);
             })
     }, [])
-    const ImgSize = {
-        width:'20%'
-    }
-    const cardPadding = {
-        padding: '10px 10px 20px 10px',
-        // margin: '-10px -10px -20px -10px',
-        // height:'100px',
-    }
-    const cardMargin = {
 
-    }
     return (
-        // <p>1  = {rate[`${first}_${second}`]} TWD</p>
-        <div>
-            <Col xs={12} className="d-flex justify-content-center align-items-center" style={cardPadding}>
-            <Card  className="text-end w-100 border" >
-                    <Card.Body style={{margin:0,padding:'10px 0'}}>
-                        <Card.Text className="text-center" >
-                            <div>
-                                <img src={Usd} style={ImgSize}></img>
-                                <span style={{margin:'0 15px'}}>美元</span>
-                                {/* <span>USD</span> */}
-                                <span className="text-bottom"> 1 USD = {first}TWD</span>    
-                            </div>
-                        </Card.Text>
-                    </Card.Body>
+        <Col xs={10} className="d-flex justify-content-center align-items-center" style={cardPadding}>
+            <Card style={{backgroundColor: 'rgba(255,255,255,0.4)',}} className="text-end w-100 border">
+                <Card.Body style={color}>
+                    <Card.Text className="text-center" >
+                            <img src={Usd} style={ImgSize}></img>
+                            {/* <span style={{margin:'0 15px'}}>美元</span> */}
+                            <span style={{margin:'0 15px'}} className="text-bottom"> 1 USD = {first}TWD</span> 
+                    </Card.Text>
+                </Card.Body>
             </Card>          
         </Col> 
-        </div> 
     );
 }
 

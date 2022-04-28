@@ -1,33 +1,60 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container,Form,Row,Col} from 'react-bootstrap';
+import { Container,Form,Row,Col,Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Background from "./image/bg.png"
 
 const app = {
     height:590,
+    backgroundImage: `url(${Background})`,
+    backgroundSize:'100%',
+    backgroundPosition: "center top",
+    backgroundRepeat: "no-repeat",
+}
+
+const margin = {
+    margin: "10px 0",
+}
+
+const label = {
+    textDecoration:'none',
+    color: "#6c757d",
+}
+
+const title = {
+    color: "white",
+    textAlign: "center",
+    margin: "20px 0",
+    fontSize: "42px",
 }
 
 const Login = () => {
     return(
-        <Container className="d-flex justify-content-center align-item-center" style={app}>
+        <Container style={app} className="d-flex justify-content-center align-items-center">
             <Row>
-                <Col md={1}>
-                    <p>登入</p>
-                </Col>
-                <Col md={1} style={app}>
-                    <Form className="border w-90" md={10}>
-                    <Form.Group  controlId="registerAccountName">
-                            <Form.Label md={2}>帳號</Form.Label>
-                            <Form.Control md={8} type="text" placeholder="Account Name" />
+                <Col>
+                    <h1 style={title}>Login</h1>
+                    <Form className="w-90" xs={10}>
+                        <Form.Group style={margin} controlId="registerAccountName">
+                            <Form.Label xs={2}>帳號</Form.Label>
+                            <Form.Control xs={8} type="text" placeholder="Account Name" />
                         </Form.Group>
-                        <Form.Group controlId="registerPassword">
+                        <Form.Group style={margin} controlId="registerPassword">
                             <Form.Label>密碼</Form.Label>
                             <Form.Control type="password" placeholder="Password" />
                         </Form.Group>
+                        <Form.Group style={margin} controlId="registerAccountName">
+                            <Link style={label} to="/Account">
+                                <Button style={{margin: "10px 10px 10px 0"}} variant="outline-secondary" type="submit">
+                                登入</Button>
+                            </Link>
+                        </Form.Group>
+                        <Form.Group style={margin} controlId="registerAccountName">
+                            <Link style={label} to="/Register">
+                                <Button style={{margin: "10px 10px 10px 0"}} variant="outline-secondary">
+                                    註冊</Button>                    
+                                </Link>
+                        </Form.Group>
                     </Form>
-                    {/* <button>登入</button> */}
-                    <button variant="outline-secondary" type="login"><Link to="/Account">登入</Link></button>
-                    {/* <Link to="/Account">登入</Link> */}
-                    <button variant="outline-secondary" type="submit"><Link to="/Register">註冊</Link></button>
                 </Col>
             </Row>
         </Container>

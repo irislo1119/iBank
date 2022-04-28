@@ -10,7 +10,7 @@
   border-radius: 20px;
   text-align: center;
   margin: 10px 0;
-  line-height: 35px;
+  padding: 0.375rem 0.75rem;
 }
 .card-header{
   border: none;
