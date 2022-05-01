@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container,Row,Col } from 'react-bootstrap';
 import Mycarousel from './components/carousel';
-import Rate from "./components/rate"
+import Rate from "./components/rate";
 import Background from "./image/wave.png";
 
 const carousel = {
@@ -29,10 +29,10 @@ const Home = () => {
             <Row style={rate} className="border">
                 <h3 style={text}>即時匯率</h3>
                 <Rate />
+                {/* <Rate />
                 <Rate />
                 <Rate />
-                <Rate />
-                <Rate />
+                <Rate /> */}
             </Row>
         </Container>  
     ); 

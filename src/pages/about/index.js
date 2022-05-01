@@ -35,7 +35,7 @@ const About = () => {
         ],
         email: [
             "chrissyhsu.i@gmail.com",
-            "email link",
+            "joyce890926@gmail.com",
             "email link",
             "email link",
         ]
