@@ -34,27 +34,27 @@ const Login = () => {
                 <Col>
                     <h1 style={title}>Login</h1>
                     <Form className="w-90" xs={10}>
-                        <Form.Group style={margin} controlId="registerAccountName">
+                        <Form.Group style={margin} controlId="loginAccountName">
                             <Form.Label xs={2}>帳號</Form.Label>
                             <Form.Control xs={8} type="text" placeholder="Account Name" />
                         </Form.Group>
-                        <Form.Group style={margin} controlId="registerPassword">
+                        <Form.Group style={margin} controlId="loginPassword">
                             <Form.Label>密碼</Form.Label>
                             <Form.Control type="password" placeholder="Password" />
                         </Form.Group>
-                        <Form.Group style={margin} controlId="registerAccountName">
+                        <Form.Group style={margin} controlId="loginAccount">
                             <Link style={label} to="/Account">
                                 <Button style={{margin: "10px 10px 10px 0"}} variant="outline-secondary" type="submit">
                                 登入</Button>
                             </Link>
                         </Form.Group>
-                        <Form.Group style={margin} controlId="registerAccountName">
+                        <Form.Group style={margin} controlId="loginAccount">
                             <Link style={label} to="/Register">
                                 <Button style={{margin: "10px 10px 10px 0"}} variant="outline-secondary">
                                     註冊</Button>                    
                                 </Link>
                         </Form.Group>
-                        <Form.Group style={margin} controlId="registerAccountName">
+                        <Form.Group style={margin} controlId="loginAccount">
                             <Link style={label} to="/Transaction">
                                 <Button style={{margin: "10px 10px 10px 0"}} variant="outline-secondary" type="submit">
                                 轉帳</Button>
