@@ -54,6 +54,12 @@ const Login = () => {
                                     註冊</Button>                    
                                 </Link>
                         </Form.Group>
+                        <Form.Group style={margin} controlId="registerAccountName">
+                            <Link style={label} to="/Transaction">
+                                <Button style={{margin: "10px 10px 10px 0"}} variant="outline-secondary" type="submit">
+                                轉帳</Button>
+                            </Link>
+                        </Form.Group>
                     </Form>
                 </Col>
             </Row>
