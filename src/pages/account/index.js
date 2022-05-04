@@ -41,6 +41,7 @@ const Account = () => {
                     {page === "MemberProfile" && <Member />}
                     {page === "HistoryProfile" && <History />}                            
             </Row>
+            
         </Container>
     ); 
 }
