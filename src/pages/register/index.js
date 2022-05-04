@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container,Form,Row,Col,Button} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Size = {
     height:'590px'
@@ -7,6 +8,11 @@ const Size = {
 
 const margin = {
     margin: "10px 0",
+}
+
+const label = {
+    textDecoration:'none',
+    color: "#6c757d",
 }
 
 const Register = () => {
@@ -33,11 +39,14 @@ const Register = () => {
                         </Form.Group>
                         <Form.Group style={margin} controlId="registerPhoneNumber">
                             <Form.Label>電話號碼</Form.Label>
-                            <Form.Control type="text" placeholder="Phone Number" />
+                            <Form.Control type="tel" placeholder="Phone Number" />
                         </Form.Group>
-                        <Button style={margin} variant="outline-secondary" type="submit">
-                            註冊
-                        </Button>
+                        <Form.Group style={margin} controlId="registerSubmit">
+                            <Link style={label} to="/Login">
+                                <Button style={{margin: "10px 10px 10px 0"}} variant="outline-secondary">
+                                    註冊</Button>                    
+                                </Link>
+                        </Form.Group>
                     </Form>
                 </Col>
             </Row>
